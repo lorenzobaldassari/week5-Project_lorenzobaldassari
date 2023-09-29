@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Spectral:wght@400;600;700;800&display=swap");
 
 header {
-  /* font-family: "Roboto", serif; */
+  /* font-family: "Roboto", serif;
   font-family: "Spectral", serif;
   background-color: #ffc017;
   font-weight: 400;
-  color: #181919;
+  color: #181919; */
   position: sticky;
   top: 0;
   z-index: 50;
@@ -22,10 +22,8 @@ header {
   background-color: #ffc017;
   font-weight: 400;
   color: #181919;
-
   width: 100%;
-  /* background-color: #ffc017; */
-
+  z-index: 50;
   font-size: 1.1em;
 }
 #menu nav {
@@ -166,11 +164,9 @@ h6 + p,
 .underline {
   display: flex;
   justify-content: space-evenly;
-
 }
 .sticky {
   width: 23%;
-  
 }
 .half {
   width: 45%;
@@ -280,7 +276,54 @@ h6 + p + div {
 .sticky ul li {
   margin: 0 1.3em 0.8em 0;
 }
-.append{
-    position: sticky;
+.append {
+  position: sticky;
   top: 160px;
+}
+.menu3 {
+  animation: changeColor2 0.5s linear 0s;
+  animation-fill-mode: forwards;
+}
+.menu2 {
+  animation: changeColor 0.5s linear 0s;
+  animation-fill-mode: forwards;
+}
+.white {
+  animation: changeColor4 0.5s linear 0s;
+  animation-fill-mode: forwards;
+}
+.green {
+  animation: changeColor3 0.5s linear 0s;
+  animation-fill-mode: forwards;
+}
+@keyframes changeColor {
+  from {
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes changeColor2 {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #ffc017;
+  }
+}
+@keyframes changeColor3 {
+  from {
+    background-color: #181919;
+  }
+  to {
+    background-color: #1a8917;
+  }
+}
+@keyframes changeColor4 {
+  from {
+    background-color: #1a8917;
+  }
+  to {
+    background-color: #181919;
+  }
 }
