@@ -9,6 +9,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
+  width: 100%;
 }
 #intex {
   font-family: "Spectral", serif;
@@ -90,7 +91,7 @@ h1 + p {
   margin-top: 1.1em;
 }
 nav img {
-  width: 200px;
+  width: 15%;
 }
 
 /* ---main---` */
@@ -325,5 +326,54 @@ h6 + p + div {
   }
   to {
     background-color: #181919;
+  }
+}
+/* mobile */
+@media screen and (max-width: 400px) {
+  #menu li:nth-child(1),
+  #menu li:nth-child(2),
+  #menu li:nth-child(3) {
+    display: none;
+  }
+  #menu nav {
+    margin-left: 0;
+    font-size: 0.8em;
+  }
+  nav img {
+    width: 100px;
+  }
+  .sideImage {
+    min-width: 30%;
+  }
+  #subTitle > div:nth-of-type(1) {
+    margin-left: 0.5em;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .m {
+    display: none;
+  }
+  #subTitle > div:nth-of-type(1) {
+    align-items: flex-start;
+  }
+  h1 + p {
+    width: 100%;
+  }
+  .card {
+    min-width: 300px;
+  }
+  header,
+  .append {
+    position: static;
+  }
+  .underline {
+    flex-direction: column-reverse;
+  }
+  .half {
+    width: 100%;
+  }
+  .sticky {
+    width: 100%;
   }
 }
